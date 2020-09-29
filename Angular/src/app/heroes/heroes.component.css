@@ -9,15 +9,15 @@
   cursor: pointer;
   position: relative;
   left: 0;
-  background-color: #EEE;
+  background-color: #DC8CFF;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
 }
 .heroes li:hover {
-  color: #607D8B;
-  background-color: #DDD;
+  color: #DC8CFF;
+  background-color: #eee;
   left: .1em;
 }
 .heroes li.selected {
@@ -33,7 +33,7 @@
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color:#5f7c9b;
+  background-color: #7B1FA2;
   line-height: 1em;
   position: relative;
   left: -1px;
@@ -41,4 +41,33 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+h2 {
+  color: #DC8CFF;
+}
+
+a:visited,
+a:link {
+  color: #303030;
+}
+
+a:hover {
+  color: #DC8CFF;
+  background-color: #eee;
+}
+
+button{
+  color: #EEC9FF;
+  margin-left: 20px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #eec9ff82 !important;
+ }
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #eec9ff82 !important;;
 }

@@ -1,19 +1,25 @@
 <h2>Final Fantasy VII heroes</h2>
 <ul class="heroes">
-	<li *ngFor="let hero of heroes">
-		<a routerLink="/detail/{{hero.id}}">
-			<span class="badge">{{hero.id}}</span>
-			{{hero.name}}
-		</a>
-		<button class="delete" title="delete hero" (click)="delete(hero)">x</button>
-	</li>
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{ hero.id }}">
+      <span class="badge">{{ hero.id }}</span>
+      {{ hero.name }}
+    </a>
+    <button
+      mat-button
+      class="delete"
+      title="delete hero"
+      (click)="delete(hero)"
+    >
+      x
+    </button>
+  </li>
 </ul>
 <div>
-	<label>Hero name:
-		<input #heroName/>
-	</label>
-	<!-- (click) passes input value to add() and then clears the input -->
-	<button (click)="add(heroName.value); heroName.value=''">
-		add
-	</button>
+  <mat-form-field appearance="fill" color="#EEC9FF">
+    <mat-label>Name</mat-label>
+      <input matInput #heroName />
+    <!-- (click) passes input value to add() and then clears the input -->
+  </mat-form-field>
+  <button mat-stroked-button (click)="add(heroName.value); heroName.value = ''">add</button>
 </div>

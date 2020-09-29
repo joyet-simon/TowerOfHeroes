@@ -1,0 +1,33 @@
+h4 {
+  margin-bottom: 0;
+  color: #EEC9FF;
+}
+
+a {
+  color: #eee;
+}
+
+a:visited,
+a:link {
+  color: #eee;
+}
+
+a:hover {
+  color: #303030;
+  background-color: #EEC9FF;
+}
+
+input{
+  color: #EEC9FF;
+  /* border-radius: 4px; */
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #eec9ff82 !important;
+ }
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #eec9ff82 !important;;
+}

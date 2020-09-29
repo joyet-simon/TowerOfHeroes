@@ -1,0 +1,33 @@
+mat-card {
+  text-align: center;
+  width: 50%;
+  margin-top: 20px;
+  color: #dc8cff;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-form-field {
+  border: 1px solid #303030;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+input {
+  color: #dc8cff;
+  /* border-radius: 4px; */
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #eec9ff82 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #eec9ff82 !important;
+}

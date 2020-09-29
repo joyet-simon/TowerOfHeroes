@@ -1,14 +1,18 @@
-<div *ngIf="hero">
-	<h2>{{hero.name | uppercase}}'s Details</h2>
-	<div>
-		<span>id:
-		</span>
-		{{hero.id}}</div>
-	<div>
-		<label>name:
-			<input [(ngModel)]="hero.name" placeholder="name"/>
-		</label>
-  </div>
-  <button (click)="save()">save</button>
-  <button (click)="goBack()">go back</button>
+<div *ngIf="hero" class="detail">
+  <mat-card>
+    <mat-card-title>{{ hero.name | uppercase }}'s Details</mat-card-title>
+    <mat-card-content>
+      <div><span>id:</span>{{ hero.id }}</div>
+      <div>
+        <mat-form-field>
+          <mat-label>name:</mat-label>
+          <input matInput [(ngModel)]="hero.name" />
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button (click)="save()">save</button>
+      <button mat-stroked-button (click)="goBack()">go back</button>
+    </mat-card-actions>
+  </mat-card>
 </div>
