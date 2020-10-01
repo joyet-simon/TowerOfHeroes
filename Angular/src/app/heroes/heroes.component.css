@@ -1,73 +1,27 @@
-/* HeroesComponent's private CSS styles */
-.heroes {
-  margin: 0 0 2em 0;
-  list-style-type: none;
+mat-card {
+  text-align: center;
+  margin: 25px;
+  color: #148e93;
+  display: inline table;
+  min-width: 29%;
+  background-color: #ffffff;
+  border: 1px solid #148e93;
   padding: 0;
-  width: 15em;
-}
-.heroes li {
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #DC8CFF;
-  margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
-  border-radius: 4px;
-}
-.heroes li:hover {
-  color: #DC8CFF;
-  background-color: #eee;
-  left: .1em;
-}
-.heroes li.selected {
-  background-color: #CFD8DC;
-  color: white;
-}
-.heroes li.selected:hover {
-  background-color: #BBD8DC;
-  color: white;
-}
-.heroes .badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #7B1FA2;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
 }
 
-h2 {
-  color: #DC8CFF;
+mat-card-title {
+  background-color: #80a2ff86;
+  color: #148e93;
 }
 
-a:visited,
-a:link {
-  color: #303030;
+mat-icon {
+  color: #80a2ff;
+  /* width: 100px;
+  height: 100px; */
+  font-size: 250%;
+  margin: 0 20px;
 }
 
-a:hover {
-  color: #DC8CFF;
-  background-color: #eee;
-}
-
-button{
-  color: #EEC9FF;
-  margin-left: 20px;
-}
-
-::ng-deep .mat-focused .mat-form-field-label {
-  /*change color of label*/
-  color: #eec9ff82 !important;
- }
-
-::ng-deep.mat-form-field-ripple {
- /*change color of underline when focused*/
- background-color: #eec9ff82 !important;;
+span {
+  text-decoration: underline;
 }

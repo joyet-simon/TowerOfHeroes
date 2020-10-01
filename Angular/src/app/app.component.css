@@ -29,3 +29,8 @@ nav a:hover {
 nav a.active {
   color: #039be5;
 }
+
+mat-toolbar{
+  background-color: #148E93;
+  color: #80a2ff;
+}

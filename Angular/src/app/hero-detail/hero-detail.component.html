@@ -1,18 +1,59 @@
 <div *ngIf="hero" class="detail">
+  <div class="name">
+    <img src="assets/{{ hero.image }}" alt="image"/>
+    <h1>{{ hero.name | uppercase }}</h1>
+    <img src="assets/{{ hero.image }}" alt="image"/>
+  </div>
   <mat-card>
-    <mat-card-title>{{ hero.name | uppercase }}'s Details</mat-card-title>
+    <mat-card-title>Général</mat-card-title>
     <mat-card-content>
-      <div><span>id:</span>{{ hero.id }}</div>
       <div>
-        <mat-form-field>
-          <mat-label>name:</mat-label>
-          <input matInput [(ngModel)]="hero.name" />
-        </mat-form-field>
+        <span>Age: </span>{{ hero.age }} ans,
+        <span> Taille: </span>{{ hero.size }}m,
+        <span> Lieu de naissance: </span>{{ hero.birthPlace }},
+        <span> Date de naissance: </span>{{ hero.birthDate }}
+      </div>
+      <div>
+        <span>Description:</span>
+        <p>{{ hero.description }}</p>
       </div>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-stroked-button (click)="save()">save</button>
-      <button mat-stroked-button (click)="goBack()">go back</button>
-    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Stats au niveau 7</mat-card-title>
+    <mat-card-content>
+      <div>
+        <span>HP: </span>{{ hero.stat7.hp }},
+        <span> MP: </span>{{ hero.stat7.mp }}
+      </div>
+      <div>
+        <span>Force: </span>{{ hero.stat7.strength }},
+        <span> Dextérité: </span>{{ hero.stat7.dex }},
+        <span> Vitalité: </span>{{ hero.stat7.vitality }},
+        <span> Magie: </span>{{ hero.stat7.magic }},
+        <span> Esprit: </span>{{ hero.stat7.spirit }},
+        <span> Chance: </span>{{ hero.stat7.luck }},
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Stats au niveau 99</mat-card-title>
+    <mat-card-content>
+      <div>
+        <span>HP: </span>{{ hero.stat99.hp }},
+        <span> MP: </span>{{ hero.stat99.mp }}
+      </div>
+      <div>
+        <span>Force: </span>{{ hero.stat99.strength }},
+        <span> Dextérité: </span>{{ hero.stat99.dex }},
+        <span> Vitalité: </span>{{ hero.stat99.vitality }},
+        <span> Magie: </span>{{ hero.stat99.magic }},
+        <span> Esprit: </span>{{ hero.stat99.spirit }},
+        <span> Chance: </span>{{ hero.stat99.luck }},
+      </div>
+    </mat-card-content>
   </mat-card>
 </div>
+<button mat-raised-button (click)="goBack()">go back</button>

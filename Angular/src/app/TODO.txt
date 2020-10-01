@@ -1,0 +1,7 @@
+ajouter des caractéristiques aux heroes
+ajouter component de comparation avec checkbox dans liste des heroes
+ajouter armes et armures
+ajouter matéria
+
+#148E93 vert
+#80A1FF bleu

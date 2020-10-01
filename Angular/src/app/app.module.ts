@@ -6,10 +6,9 @@ import { HttpClientModule } from "@angular/common/http";
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './shared/in-memory-data.service';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { MessagesComponent } from './messages/messages.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
@@ -50,11 +49,10 @@ import { MatCardModule } from "@angular/material/card";
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    AccueilComponent
   ],
   bootstrap: [ AppComponent ]
 })

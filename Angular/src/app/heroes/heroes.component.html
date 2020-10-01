@@ -1,25 +1,29 @@
-<h2>Final Fantasy VII heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{ hero.id }}">
-      <span class="badge">{{ hero.id }}</span>
-      {{ hero.name }}
-    </a>
-    <button
-      mat-button
-      class="delete"
-      title="delete hero"
-      (click)="delete(hero)"
-    >
-      x
-    </button>
-  </li>
-</ul>
-<div>
+<div class="detail">
+  <mat-card *ngFor="let hero of heroes">
+    <mat-card-title>{{ hero.name }}</mat-card-title>
+    <mat-card-content>
+      <div><span>Age: </span>{{ hero.age }} ans</div>
+      <div><span>Taille: </span>{{ hero.size }}m</div>
+      <div><span>Lieu de naissance: </span>{{ hero.birthPlace }}</div>
+      <div><span>Date de naissance: </span>{{ hero.birthDate }}</div>
+    </mat-card-content>
+    <mat-card-actions>
+      <a routerLink="/detail/{{ hero.id }}"><mat-icon>pending</mat-icon></a>
+      <a routerLink="/detail/{{ hero.id }}"><mat-icon>pending</mat-icon></a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<!-- <div>
   <mat-form-field appearance="fill" color="#EEC9FF">
     <mat-label>Name</mat-label>
-      <input matInput #heroName />
-    <!-- (click) passes input value to add() and then clears the input -->
+    <input matInput #heroName />
+    (click) passes input value to add() and then clears the input
   </mat-form-field>
-  <button mat-stroked-button (click)="add(heroName.value); heroName.value = ''">add</button>
-</div>
+  <button
+    mat-stroked-button
+    (click)="add(heroName.value); heroName.value = ''"
+    class="add"
+  >
+    add
+  </button>
+</div> -->
