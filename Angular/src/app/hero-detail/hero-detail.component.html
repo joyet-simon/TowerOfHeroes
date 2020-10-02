@@ -4,51 +4,67 @@
     <h1>{{ hero.name | uppercase }}</h1>
     <img src="assets/{{ hero.image }}" alt="image" />
   </div>
-  <h2>Général</h2>
-  <hr />
-  <mat-grid-list cols="2" rowHeight="50px">
-    <mat-grid-tile>Age:</mat-grid-tile><mat-grid-tile>{{ hero.age }} ans</mat-grid-tile>
-    <mat-grid-tile>Taille:</mat-grid-tile><mat-grid-tile>{{ hero.size }}m</mat-grid-tile>
-    <mat-grid-tile>Lieu de naissance:</mat-grid-tile><mat-grid-tile>{{ hero.birthPlace }}</mat-grid-tile>
-    <mat-grid-tile>Date de naissanc:</mat-grid-tile><mat-grid-tile>{{ hero.birthDate }}</mat-grid-tile>
-  </mat-grid-list>
-  <div>
-    <span>Description:</span>
-    <p>{{ hero.description }}</p>
+  <div class="general">
+    <h2 class="general">Général</h2>
+    <hr class="general" />
+    <div class="row justify-content-md-center">
+      <span class="col col-md-6">Age:</span>
+      <span class="col col-md-6">{{ hero.age }} ans</span>
+      <span class="col col-md-6">Taille:</span>
+      <span class="col col-md-6">{{ hero.size }}m</span>
+      <span class="col col-md-6">Lieu de naissance:</span>
+      <span class="col col-md-6">{{ hero.birthPlace }}</span>
+      <span class="col col-md-6">Date de naissance:</span>
+      <span class="col col-md-6">{{ hero.birthDate }}</span>
+      <span class="col col-md-6">Description:</span>
+      <p class="col col-md-6">{{ hero.description }}</p>
+    </div>
   </div>
 
-  <mat-card>
-    <mat-card-title>Stats au niveau 7</mat-card-title>
-    <mat-card-content>
-      <div>
-        <span>HP: </span>{{ hero.stat7.hp }}, <span> MP: </span
-        >{{ hero.stat7.mp }}
-      </div>
-      <div>
-        <span>Force: </span>{{ hero.stat7.strength }}, <span> Dextérité: </span
-        >{{ hero.stat7.dex }}, <span> Vitalité: </span
-        >{{ hero.stat7.vitality }}, <span> Magie: </span>{{ hero.stat7.magic }},
-        <span> Esprit: </span>{{ hero.stat7.spirit }}, <span> Chance: </span
-        >{{ hero.stat7.luck }},
-      </div>
-    </mat-card-content>
-  </mat-card>
+  <div class="stat7">
+    <h2 class="stat7">Statistiques au niveau 7</h2>
+    <hr class="stat7" />
+    <div class="row justify-content-md-center">
+      <span class="col col-md-6">HP:</span>
+      <span class="col col-md-6">{{ hero.stat7.hp }}</span>
+      <span class="col col-md-6">MP:</span>
+      <span class="col col-md-6">{{ hero.stat7.mp }}</span>
+      <span class="col col-md-6">Force:</span>
+      <span class="col col-md-6">{{ hero.stat7.strength }}</span>
+      <span class="col col-md-6">Dextérité:</span>
+      <span class="col col-md-6">{{ hero.stat7.dex }}</span>
+      <span class="col col-md-6">Vitalité:</span>
+      <span class="col col-md-6">{{ hero.stat7.vitality }}</span>
+      <span class="col col-md-6">Magie:</span>
+      <span class="col col-md-6">{{ hero.stat7.magic }}</span>
+      <span class="col col-md-6">Esprit:</span>
+      <span class="col col-md-6">{{ hero.stat7.spirit }}</span>
+      <span class="col col-md-6">Chance:</span>
+      <span class="col col-md-6">{{ hero.stat7.luck }}</span>
+    </div>
+  </div>
 
-  <mat-card>
-    <mat-card-title>Stats au niveau 99</mat-card-title>
-    <mat-card-content>
-      <div>
-        <span>HP: </span>{{ hero.stat99.hp }}, <span> MP: </span
-        >{{ hero.stat99.mp }}
-      </div>
-      <div>
-        <span>Force: </span>{{ hero.stat99.strength }}, <span> Dextérité: </span
-        >{{ hero.stat99.dex }}, <span> Vitalité: </span
-        >{{ hero.stat99.vitality }}, <span> Magie: </span
-        >{{ hero.stat99.magic }}, <span> Esprit: </span
-        >{{ hero.stat99.spirit }}, <span> Chance: </span>{{ hero.stat99.luck }},
-      </div>
-    </mat-card-content>
-  </mat-card>
+  <div class="stat99">
+    <h2 class="stat99">Statistiques au niveau 99</h2>
+    <hr class="stat99" />
+    <div class="row justify-content-md-center">
+      <span class="col col-md-6">HP:</span>
+      <span class="col col-md-6">{{ hero.stat99.hp }}</span>
+      <span class="col col-md-6">MP:</span>
+      <span class="col col-md-6">{{ hero.stat99.mp }}</span>
+      <span class="col col-md-6">Force:</span>
+      <span class="col col-md-6">{{ hero.stat99.strength }}</span>
+      <span class="col col-md-6">Dextérité:</span>
+      <span class="col col-md-6">{{ hero.stat99.dex }}</span>
+      <span class="col col-md-6">Vitalité:</span>
+      <span class="col col-md-6">{{ hero.stat99.vitality }}</span>
+      <span class="col col-md-6">Magie:</span>
+      <span class="col col-md-6">{{ hero.stat99.magic }}</span>
+      <span class="col col-md-6">Esprit:</span>
+      <span class="col col-md-6">{{ hero.stat99.spirit }}</span>
+      <span class="col col-md-6">Chance:</span>
+      <span class="col col-md-6">{{ hero.stat99.luck }}</span>
+    </div>
+  </div>
 </div>
 <button mat-raised-button (click)="goBack()">go back</button>

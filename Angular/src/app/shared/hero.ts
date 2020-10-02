@@ -8,6 +8,7 @@ export interface Hero {
     birthPlace: string;
     birthDate: string;
     description: string;
+    stats: Array<HeroStats>;
     stat7: HeroStats;
     stat99: HeroStats;
     image: string;

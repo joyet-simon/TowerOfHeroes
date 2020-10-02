@@ -1,32 +1,56 @@
-mat-card {
-  text-align: center;
-  color: #148e93;
-  background-color: #ffffff;
-  border: 1px solid #148e93;
-  padding: 0;
-  width: 95%;
-  margin: 50px auto;
-}
-
-mat-card-title {
-  background-color: #80a2ff86;
-  color: #148e93;
-}
-
-mat-grid-tile{
-  text-align: left;
-}
-
 h1 {
   text-align: center;
   margin: auto;
 }
 
 button {
-  background-color: #80a2ff86;
-  color: #148e93;
+  background-color: #148e93;
+  color: #ffffff;
 }
 
 .name {
   display: flex;
 }
+
+.detail {
+  margin: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+.general {
+  color: #80a2ff;
+}
+
+hr.general {
+  border: 0;
+  height: 1.5px;
+  background-image: linear-gradient(to right, rgba(128, 161, 255, 0), rgba(128, 161, 255, 0.75), rgba(128, 161, 255, 0));
+}
+
+.stat7 {
+  color: #148e93;
+}
+
+hr.stat7 {
+  border: 0;
+  height: 1.5px;
+  background-image: linear-gradient(to right, rgba(20, 142, 147, 0), rgba(20, 142, 147, 0.75), rgba(20, 142, 147, 0));
+}
+
+div.stat99, .stat99 {
+  color: #80a2ff;
+}
+
+div.stat99{
+  margin-top: 20px;
+}
+
+hr.stat99 {
+  border: 0;
+  height: 1.5px;
+  background-image: linear-gradient(to right, rgba(128, 161, 255, 0), rgba(128, 161, 255, 0.75), rgba(128, 161, 255, 0));
+}
+
