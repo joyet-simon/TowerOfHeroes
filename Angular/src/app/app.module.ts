@@ -22,6 +22,7 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
+import { MatGridListModule } from "@angular/material/grid-list";
 
 @NgModule({
   imports: [
@@ -37,6 +38,7 @@ import { MatCardModule } from "@angular/material/card";
     MatListModule,
     MatButtonModule,
     MatCardModule,
+    MatGridListModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

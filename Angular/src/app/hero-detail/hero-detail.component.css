@@ -13,20 +13,20 @@ mat-card-title {
   color: #148e93;
 }
 
-span {
-  text-decoration: underline;
+mat-grid-tile{
+  text-align: left;
 }
 
-h1{
+h1 {
   text-align: center;
   margin: auto;
 }
 
-button{
+button {
   background-color: #80a2ff86;
   color: #148e93;
 }
 
-.name{
+.name {
   display: flex;
 }

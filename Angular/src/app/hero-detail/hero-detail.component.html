@@ -1,39 +1,35 @@
 <div *ngIf="hero" class="detail">
   <div class="name">
-    <img src="assets/{{ hero.image }}" alt="image"/>
+    <img src="assets/{{ hero.image }}" alt="image" />
     <h1>{{ hero.name | uppercase }}</h1>
-    <img src="assets/{{ hero.image }}" alt="image"/>
+    <img src="assets/{{ hero.image }}" alt="image" />
   </div>
-  <mat-card>
-    <mat-card-title>Général</mat-card-title>
-    <mat-card-content>
-      <div>
-        <span>Age: </span>{{ hero.age }} ans,
-        <span> Taille: </span>{{ hero.size }}m,
-        <span> Lieu de naissance: </span>{{ hero.birthPlace }},
-        <span> Date de naissance: </span>{{ hero.birthDate }}
-      </div>
-      <div>
-        <span>Description:</span>
-        <p>{{ hero.description }}</p>
-      </div>
-    </mat-card-content>
-  </mat-card>
+  <h2>Général</h2>
+  <hr />
+  <mat-grid-list cols="2" rowHeight="50px">
+    <mat-grid-tile>Age:</mat-grid-tile><mat-grid-tile>{{ hero.age }} ans</mat-grid-tile>
+    <mat-grid-tile>Taille:</mat-grid-tile><mat-grid-tile>{{ hero.size }}m</mat-grid-tile>
+    <mat-grid-tile>Lieu de naissance:</mat-grid-tile><mat-grid-tile>{{ hero.birthPlace }}</mat-grid-tile>
+    <mat-grid-tile>Date de naissanc:</mat-grid-tile><mat-grid-tile>{{ hero.birthDate }}</mat-grid-tile>
+  </mat-grid-list>
+  <div>
+    <span>Description:</span>
+    <p>{{ hero.description }}</p>
+  </div>
 
   <mat-card>
     <mat-card-title>Stats au niveau 7</mat-card-title>
     <mat-card-content>
       <div>
-        <span>HP: </span>{{ hero.stat7.hp }},
-        <span> MP: </span>{{ hero.stat7.mp }}
+        <span>HP: </span>{{ hero.stat7.hp }}, <span> MP: </span
+        >{{ hero.stat7.mp }}
       </div>
       <div>
-        <span>Force: </span>{{ hero.stat7.strength }},
-        <span> Dextérité: </span>{{ hero.stat7.dex }},
-        <span> Vitalité: </span>{{ hero.stat7.vitality }},
-        <span> Magie: </span>{{ hero.stat7.magic }},
-        <span> Esprit: </span>{{ hero.stat7.spirit }},
-        <span> Chance: </span>{{ hero.stat7.luck }},
+        <span>Force: </span>{{ hero.stat7.strength }}, <span> Dextérité: </span
+        >{{ hero.stat7.dex }}, <span> Vitalité: </span
+        >{{ hero.stat7.vitality }}, <span> Magie: </span>{{ hero.stat7.magic }},
+        <span> Esprit: </span>{{ hero.stat7.spirit }}, <span> Chance: </span
+        >{{ hero.stat7.luck }},
       </div>
     </mat-card-content>
   </mat-card>
@@ -42,16 +38,15 @@
     <mat-card-title>Stats au niveau 99</mat-card-title>
     <mat-card-content>
       <div>
-        <span>HP: </span>{{ hero.stat99.hp }},
-        <span> MP: </span>{{ hero.stat99.mp }}
+        <span>HP: </span>{{ hero.stat99.hp }}, <span> MP: </span
+        >{{ hero.stat99.mp }}
       </div>
       <div>
-        <span>Force: </span>{{ hero.stat99.strength }},
-        <span> Dextérité: </span>{{ hero.stat99.dex }},
-        <span> Vitalité: </span>{{ hero.stat99.vitality }},
-        <span> Magie: </span>{{ hero.stat99.magic }},
-        <span> Esprit: </span>{{ hero.stat99.spirit }},
-        <span> Chance: </span>{{ hero.stat99.luck }},
+        <span>Force: </span>{{ hero.stat99.strength }}, <span> Dextérité: </span
+        >{{ hero.stat99.dex }}, <span> Vitalité: </span
+        >{{ hero.stat99.vitality }}, <span> Magie: </span
+        >{{ hero.stat99.magic }}, <span> Esprit: </span
+        >{{ hero.stat99.spirit }}, <span> Chance: </span>{{ hero.stat99.luck }},
       </div>
     </mat-card-content>
   </mat-card>
